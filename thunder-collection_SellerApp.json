@@ -1,0 +1,65 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "SellerApp",
+    "dateExported": "2023-07-04T21:19:03.352Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "490b37f9-f4e6-4d0d-9bea-40d187ed2597",
+            "colId": "4a168f51-3d0f-4eca-900b-d59d889bce69",
+            "containerId": "",
+            "name": "CreateOrder",
+            "url": "localhost:8000/order",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-04T21:13:16.087Z",
+            "modified": "2023-07-04T21:18:55.433Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"productId\":\"abc\",\n    \"userId\" : \"shakti\",\n    \"price\" : 1000,\n    \"qty\": 10\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7d48d7e8-5ed1-4cc9-b280-e5e1f9731cbb",
+            "colId": "4a168f51-3d0f-4eca-900b-d59d889bce69",
+            "containerId": "",
+            "name": "GetOrder",
+            "url": "localhost:8000/order?userId=shakti&price=100",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-04T21:13:33.114Z",
+            "modified": "2023-07-04T21:16:37.521Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "productId",
+                    "value": "abc",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "userId",
+                    "value": "shakti",
+                    "isPath": false
+                },
+                {
+                    "name": "price",
+                    "value": "100",
+                    "isPath": false
+                },
+                {
+                    "name": "qty",
+                    "value": "2",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
